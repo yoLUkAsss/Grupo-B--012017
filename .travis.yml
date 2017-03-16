@@ -1,13 +1,9 @@
 language: java
-
-mvn test -B
-
+sudo: required
 jdk:
   - oraclejdk8
   - oraclejdk7
   - openjdk6
-
 script: 
-
   - cd desapp-grupob-backend 
   - mvn clean install -Dmaven.compiler.target=1.8 -Dmaven.compiler.source=1.8
